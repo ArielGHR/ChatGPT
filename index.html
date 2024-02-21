@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos adicionales si los necesitas */
+        .img-max-width {
+            max-width: 300px;
+            height: auto;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-dark" id="darkModeToggle">Modo Oscuro</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca-de-mi">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="acerca-de-mi" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Ariel Hurtado</h2>
+                    <p>Hola! Mi nombre es Ariel Hurtado, bienvenido a mi portafolio.
+                    En esta página podrás aprender un poco más sobre mí.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="me.png" alt="Mi foto" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="habilidad1.png" alt="CSS" class="img-fluid img-max-width">
+                </div>
+                <div class="col-md-6 vertical-center">
+                    <h3>C++</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="habilidad2.png" alt="HTML" class="img-fluid img-max-width">
+                </div>
+                <div class="col-md-6 vertical-center">
+                    <h3>HTML</h3>
+                    <p>Creación de páginas web con HTML</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="habilidad3.png" alt="JavaScript" class="img-fluid img-max-width">
+                </div>
+                <div class="col-md-6 vertical-center">
+                    <h3>JavaScript</h3>
+                    <p>Creación de scripts para páginas web con distintas funcionalidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="py-5">
+        <div class="container text-center">
+            <h2>Portafolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid img-max-width">
+                    <h3>Proyecto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Ver</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid img-max-width">
+                    <h3>Proyecto 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Ver</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid img-max-width">
+                    <h3>Proyecto 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Ver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid img-max-width">
+                    <h3>Servicio 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio1">Ver</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid img-max-width">
+                    <h3>Servicio 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio2">Ver</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="servicio3.jpg" alt="Servicio 3" class="img-fluid img-max-width">
+                    <h3>Servicio 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio3">Ver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Ariel Hurtado. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Servicio 1 -->
+    <div class="modal fade" id="modalServicio1" tabindex="-1" role="dialog" aria-labelledby="modalServicio1Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio1Label">Servicio 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Contenido del Servicio 1...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 2 -->
+    <div class="modal fade" id="modalServicio2" tabindex="-1" role="dialog" aria-labelledby="modalServicio2Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio2Label">Servicio 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Contenido del Servicio 2...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 3 -->
+    <div class="modal fade" id="modalServicio3" tabindex="-1" role="dialog" aria-labelledby="modalServicio3Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio3Label">Servicio 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Contenido del Servicio 3...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>
